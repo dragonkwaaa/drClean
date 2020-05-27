@@ -1,0 +1,1129 @@
+/* :: ksg_20200519_2259 close : 기초 내용 파트 */
+html, 
+body{
+	background-color : #fff;
+	/* max-width: 1920px; */
+	min-width : 1024px;
+	margin : 0 auto;
+	height : 100%;
+}
+.container{
+	margin:0 auto;
+	position:relative;
+	height: 100%;
+}
+.contents {
+    position: relative;
+}
+.contents.overlay:after {
+	content : "";
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	background-color : rgba(0, 0, 0, 0.5);	
+	z-index : 5;
+}
+
+.leftPartGroup,
+.centerPartGroup,
+.rightPartGroup {
+	display : inline-block;
+	vertical-align : middle;
+}
+.textBtn {
+	display : inline-block;
+	font-size : 13px;
+	vertical-align : middle;
+}
+.btnGroup a {
+	display : inline-block;
+}
+.section {
+	display : block;
+	position : relative;
+}
+.tbox {
+	/* padding : 16px 30px; */
+	padding: 14px 55px 14px 30px;
+	border : 1px solid #05a396;
+	font-size : 12px;
+	/* font-family : "omniGulim",sans-serif; */
+}
+.textBtn span,
+.tboxBtn div {
+	font-family : inherit;
+}
+.tbox.searchSort {
+	border-radius : 25.5px;
+}
+.textBtn.shortMod {
+	margin-top : 35px;
+	background-color : #fff;
+	border-radius : 25.5px;
+	width : 140px;
+	text-align : center;
+	font-size : 12px;
+	padding : 14px 0 12px 0;
+	/* font-family : "omniGulim",sans-serif; */
+}
+.textBtn.thickMod {
+	margin-top: 32px;
+    width: 230px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 16px;
+	border-radius: 30px;
+}
+.textBtn.thickMod.kakaoMod {
+	position : relative;
+	background-color : #f7bf00;
+	padding-left : 102px;
+	width : 128px;
+	text-align : left;
+}
+.textBtn.thickMod.kakaoMod .kakaoIcon {
+	position : absolute;
+	top : 9px;
+	left : 46px;
+}
+.titleBox.sectionTitleSort {
+	display : block;
+	width : 100%; 
+	margin : 90px 0 60px 0;
+	font-size : 30px;
+	font-weight : 600;
+	text-align : center;
+}
+.sectionCon {
+	display : block;
+	max-width : 1064px;
+	margin : 0 auto;
+	position : relative;
+}
+ul.cardBoxList {
+	width : calc(100% - 40px);
+	margin : 0 auto 20px auto;
+	font-size : 0;
+}
+ul.cardBoxList li {
+	display : inline-block;
+	position : relative;
+	width : calc(25% - 14px);
+	margin-right : 18px;
+	vertical-align : top;
+}
+ul.cardBoxList li:nth-child(4n) {
+	margin-right : 0;
+}
+ul.cardBoxList li:nth-child(n+5) {
+	margin-top : 70px;
+}
+ul.cardBoxList .listUpperGroup {
+	display : block;
+	background-color : #f7f5f5;
+	line-height : 300px;
+	width : 100%;
+	height : 156px;
+	padding : 72px 0;
+	text-align : center;
+	position : relative;
+}
+.listUpperGroup .cardBoxImg {
+	width : Auto;
+	height : 100%;
+	max-height : 156px;
+}
+ul.cardBoxList .listUpperGroup .favoriteIcon {
+	position : absolute;
+	top : 20px;
+	right : 20px;
+	z-index : 30;
+}
+ul.cardBoxList .listBottomGroup {
+	display : block;
+	margin-top : 20px;
+}
+.listBottomGroup .titleBox {
+	font-size : 12px;
+	line-height : 24px;
+}
+.listBottomGroup .infoBox {
+	margin-top : 10px;
+}
+ul.cardBoxList .listBottomGroup .infoBox .priceText {
+	display : inline-block;
+	font-size : 14px;
+}
+.listBottomGroup .priceText .numberStatus {
+	color : #a8a8a8;
+	text-decoration-line : line-through;
+}
+.listBottomGroup .priceText .percentStatus {
+	color : #dd033c;
+}
+.listBottomGroup .priceText.finalPriceSort {
+	margin-left : 20px;
+}
+.linkCover.cardBoxSort {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	z-index : 20;
+}
+footer {
+	display : block;
+	width : 100%;
+	background-color : #000;
+}
+footer .footerConGroup {
+	display : block;
+	max-width : 1064px;
+	margin : 0 auto;
+	font-size : 0;
+}
+.footerConGroup .leftPartGroup {
+	width : calc(100% - 66px);
+	padding : 30px 0 30px 20px;
+	vertical-align : middle;
+}
+.footerConGroup .leftPartGroup a {
+	display : inline-block;
+	margin-right : 30px;
+	vertical-align : middle;
+}
+.footerConGroup .leftPartGroup a:last-child {
+	margin-right : 0;
+}
+.logoIcon.footerSort {
+	display : inline-block;
+	width : 69px;
+	height : 22px;
+}
+.footerConGroup .leftPartGroup .textBtn {
+	font-size : 12px;
+	color : #9c9c9c;
+	font-family : "otmGothic",sans-serif;
+}
+.footerConGroup .rightPartGroup {
+	padding-right : 20px;
+	width : 26px;
+	height : 26px;
+	vertical-align : middle;
+}
+.iconBtn.moveTopIcon {
+	display : block;
+}
+.rateGroup {
+	display : block;
+	text-align : center;
+}
+.noticeInfoBox {
+	display : block;
+	font-size : 13px;
+	font-family : "otmGothic",sans-serif;
+}
+.noticeInfoBox .titleBox,
+.noticeInfoBox .infoTextBox {
+	vertical-align : middle;
+}
+.noticeInfoBox .infoTextBox {
+	padding-left : 30px;
+}
+
+.countBtnGroup {
+	display : inline-block;
+    border: 1px solid #d9d9d9;
+    height: 32px;
+    font-size: 0;
+}
+.countBtnGroup a {
+	display : inline-block;
+	width : 32px;
+	line-height: 32px;
+	text-align : center;
+	background-color : #fff;
+}
+.countBtnGroup span input {
+    font-size: 13px;
+    width: 50px;
+    border: none;
+    height: 32px;
+    vertical-align: top;
+	text-align: center;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	padding : 0;
+	font-family : "otmGothic",sans-serif;
+	font-weight : 600;
+}
+.priceBox.optionSort {
+	position : absolute;
+	bottom : 30px;
+	right : 30px;
+	font-size : 14px;
+	font-weight : 600;
+}
+.totalPriceGroup {
+	display : block;
+	font-size : 0;
+}
+.totalPriceGroup .titleBox {
+	display : inline-block;
+	vertical-align : middle;
+	width : 50%;
+	text-align : left;
+	font-size : 13px;
+	font-family : "otmGothic",sans-serif;
+	font-weight : 600;
+}
+.totalPriceGroup .priceBox {
+	display : inline-block;
+	vertical-align : middle;
+	width : 50%;
+	text-align : right;
+	font-size : 24px;
+	font-weight : 600;
+	color : #d60047;
+}
+.btnGroup.buyControlSort {
+	display : block;
+	font-size : 0;
+	margin-top : 20px;
+}
+.textBtn.cartMod {
+	display : inline-block;
+	border : 2px solid #8dc321;
+	border-radius: 30px;
+	height : 56px;
+	line-height : 60px;
+	width : calc(50% - 10px);
+	margin-right : 6px;
+	text-align : center;
+	vertical-align : middle;
+	font-size : 20px;
+	font-weight : 600;
+	color : #8dc321;
+}
+.textBtn.buyMod {
+	display : inline-block;
+	border-radius: 30px;
+	height : 60px;
+	line-height : 60px;
+	width : calc(50% - 6px);
+	text-align : center;
+	vertical-align : middle;
+	font-size : 20px;
+	font-weight : 600;
+	color : #fff;
+	background-color : #05a396;
+	margin-left : 6px;
+}
+.verticalPartGroup {
+	display : block;
+	position : relative;
+	width : calc(100% - 40px);
+	height : 100%;
+	margin : 0 auto;
+}
+.listHeadLine.totalRateSort {
+	display : block;
+	width : 100%;
+	height : 95px;
+	line-height : 95px;
+	border-radius : 80px;
+	border: 1px solid #cccccc;
+}
+.listHeadLine.totalRateSort .rateText {
+	display : inline-block;
+	vertical-align : middle;
+	margin-left : 20px;
+	font-size : 0;
+	height : 100%;
+}
+.listHeadLine.totalRateSort .rateText .currentRate {
+	font-size : 30px;
+	font-weight : 800;
+	color : #05a396;
+}
+.listHeadLine.totalRateSort .rateText .rateLimit {
+	font-size : 24px;
+	margin-left : 6px;
+}
+.listHeadLine.totalRateSort .rateGroup {
+	display : inline-block;
+	vertical-align : middle;
+	height : 100%;
+}
+.listConGroup ul li {
+	border-bottom : 1px solid #cccccc;
+}
+.verticalPartGroup .listConGroup {
+	display : block;
+	width : 100%;
+	border-top : 2px solid #000;
+	font-size : 0;
+	margin-top : 20px;
+}
+ul li .listTitleLine {
+	display : block;
+	padding : 30px 51px;
+}
+.listTitleLine .orderNumber {
+	display : inline-block;
+	width : 41px;
+	font-size : 12px;
+	vertical-align : middle;
+	text-align : left;
+}
+.listTitleLine .rateGroup {
+	display : inline-block;
+	width : 159px;
+	vertical-align : middle;
+	text-align : left;
+}
+.listTitleLine .rateGroup .starOnIcon.greenMod,
+.listTitleLine .rateGroup .starOffIcon.greenMod {
+	width : 16px;
+	height : 16px;
+}
+.listTitleLine .rateGroup i + i {
+	margin-left : 2px;
+}
+.listTitleLine .infoBox {
+	display : inline-block;
+	width : 294px;
+	padding-right : 283px;
+	vertical-align : middle;
+	text-align : left;
+}
+.listTitleLine .infoBox div {
+	font-size : 11px;
+}
+.listTitleLine .infoBox div + div {
+	margin-top : 8px;
+}
+.listTitleLine .userIdText {
+	display : inline-block;
+	width : 89px;
+	font-size : 11px;
+	vertical-align : middle;
+}
+.listTitleLine .regDateText {
+	display : inline-block;
+	font-size : 11px;
+	width : 56px;
+	vertical-align : middle;
+}
+.listTitleLine * {
+	font-family : "otmGothic",sans-serif;
+	font-weight : 600;
+}
+.listHiddenBox {
+	display : none;
+	background-color : #f2f2f5;
+}
+.listHiddenBox * {
+	font-family : "otmGothic",sans-serif;
+	font-weight : 600;
+}
+.listHiddenBox .infoBox {
+	padding : 29px 251px;
+	text-align : left;
+	font-size : 12px;
+	line-height : 16px;
+}
+/* :: ksg_20200519_2259 close : 기초 내용 파트 */
+
+
+
+
+
+
+
+
+
+
+/* :: ksg_20200519_2246 open :  drClean\common\pages\header.php 파트 */
+header {
+	position : absolute;
+	top : 0;
+	font-size: 0;
+	display : block;
+	width : 100%;
+	background-color : transparent;
+	z-index : 50;
+}
+/* header.movable {
+	background-color : #000;
+} */
+.headerConGroup {
+	display : block;
+	color : #fff;
+	font-size : 0;
+	padding : 60px 0;
+	text-align : center;
+}
+.leftPartGroup.headerSort {
+	padding : 18.5px 0;
+	margin-right : 174px;
+}
+.leftPartGroup.headerSort .textBtn {
+	color : #fff;
+	margin-right : 23px;
+	letter-spacing : -0.3px;
+	width : 48px;
+	font-weight : 400;
+	font-family : "otmGothic",sans-serif;
+}
+.leftPartGroup.headerSort .textBtn:last-child {
+	margin-right : 0;
+}
+.centerPartGroup.headerSort {
+	width : auto;
+	/* margin : 0 17% 0 8%; */
+}
+.rightPartGroup.headerSort {
+	position : relative;
+	padding : 18.5px 0;
+	width : calc(100% - 595px);
+	text-align : right;
+}
+.rightPartGroup.headerSort .textBtn.loginSort {
+	position : absolute;
+	right : 0;
+	top : -31px;
+	font-weight : 200;
+	font-family : "otmGothic",sans-serif;
+
+}
+.rightPartGroup.headerSort .btnGroup .iconBtn {
+	margin-right : 20px;
+}
+.rightPartGroup.headerSort .btnGroup .iconBtn:last-child {
+	margin-right : 0;
+}
+/* :: ksg_20200519_2246 close :  drClean\common\pages\header.php 파트 */
+
+
+/* :: ksg_20200520_1711 open : "drClean\index.php" 파트 */
+/* :: ksg_20200520_1718 open : [메인 슬라이더 파트] */
+.sliderImg {
+	width : 100%;
+	height : 100%;
+}
+.btnGroup.mainSliderSort {
+	position : absolute;
+	bottom : 17.708vw;
+	left : 50%;
+	transform : translateX(-50%);
+	-webkit-transform : translateX(-50%);
+	width : 9.635vw;
+	height : 2.865vw;
+	line-height : 2.865vw;
+	text-align : center;
+	font-size : 0.833vw;
+	color : #fff;
+	border : 1px solid #fff;
+	border-radius : 1.563vw;
+}
+
+.btnGroup.mainSliderSort .textBtn {
+	display : block;
+	width : 100%;
+	height : 100%;
+}
+.slick-dots {
+	bottom : 3.125vw;
+	z-index : 10;
+}
+.slick-dots li {
+    width: 14px;
+    height: 14px;
+}
+.slick-dots li button {
+	width : 14px;
+	height : 14px;
+	vertical-align : top;
+}
+.slick-dots li.slick-active button:before {
+	background-color : #fff;
+	opacity : 1;
+	border : 2px solid #000;
+	width : 10px;
+	height : 10px;
+}
+.slick-dots li button:before {
+	content : "";
+	width : 14px;
+	height : 14px;
+	border-radius : 50%;
+	background-color: rgba(236, 236, 236, 0.4);
+	opacity : 1;
+
+}
+.slick-dotted.slick-slider {
+	margin-bottom : 0; 
+}
+/* :: ksg_20200520_1718 close : [메인 슬라이더 파트] */
+
+/* :: ksg_20200520_2030 open : [중간 녹/백 파트]  */
+.section.mainIntroduceSect {
+	background : linear-gradient(90deg, #05a396 50%, #f2f2f5 50%);
+}
+.section.mainIntroduceSect .introduceInfoGroup {
+	display : block;
+	max-width : 1064px;
+	margin : 0 auto;
+	font-size : 0;
+}
+.introduceInfoGroup .leftPartGroup.bestCompanySort {
+	width : calc(50% - 20px);
+	padding : 78px 0 117px 20px;
+	font-size : 0;
+	vertical-align : top;
+}
+.introduceInfoGroup .rightPartGroup.searchCompanySort {
+	width : calc(50% - 20px);
+	padding : 78px 20px 117px 0;
+	font-size : 0;
+	text-align : right;
+	vertical-align : top;
+}
+.leftPartGroup.bestCompanySort .titleBox {
+	font-size : 14px;
+	color : #fff;
+	/* font-family : "omniGulim",sans-serif; */
+}
+.leftPartGroup.bestCompanySort .infoBox {
+	font-size : 34px;
+	color : #fff;
+	margin-top : 22px;
+	/* font-family : "omniGulim",sans-serif; */
+	font-weight : 200;
+	line-height : normal;
+}
+
+
+.rightPartGroup.searchCompanySort .titleBox {
+	font-size : 14px;
+	/* font-family : "omniGulim",sans-serif; */
+}
+.rightPartGroup.searchCompanySort .infoBox {
+	font-size : 34px;
+	margin-top : 22px;
+	color : #05a396;
+	/* font-family : "omniGulim",sans-serif; */
+	font-weight : 200;
+	line-height : normal;
+}
+.rightPartGroup.searchCompanySort .rightPositioned {
+	width : auto;
+	display : inline-block;
+	text-align : left;
+}
+.rightPartGroup.searchCompanySort .searchGroup {
+	margin-top : 35px;
+	position : relative;
+}
+.rightPartGroup.searchCompanySort .searchGroup a {
+	position : absolute;
+	right : 30px;
+	top : 14px;
+}
+.rightPartGroup.searchCompanySort .tbox.searchSort {
+	width : 230px;
+	/* padding : 14px 55px 14px 30px; */
+}
+/* :: ksg_20200520_2030 close : [중간 녹/백 파트]  */
+
+/* :: ksg_20200520_2339 open [중간 제품 파트] */
+.section.mainGoodsSect {
+	text-align : center;
+}
+.section.mainGoodsSect .textBtn.shortMod {
+	background-color : #05a396;
+	color : #fff;
+}
+.section.mainGoodsSect .leftPartGroup {
+	padding : 0 0 0 20px;
+	text-align : left;
+	width: calc(50% - 20px);
+    font-size: 0;
+    vertical-align: middle;
+} 
+.section.mainGoodsSect .rightPartGroup {
+	padding : 60px 20px 60px 0;
+	width: calc(50% - 20px);
+	font-size: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+.section.mainGoodsSect .leftPartGroup .titleBox {
+	font-size : 14px;
+	/* font-family : "omniGulim",sans-serif; */
+}
+.section.mainGoodsSect .leftPartGroup .infoBox {
+	font-size : 34px;
+	margin-top : 17px;
+	/* font-family : "omniGulim",sans-serif; */
+	font-weight : 200;
+}
+.section.mainGoodsSect .leftPartGroup .textBtn.shortMod {
+	margin-top : 17px;
+}
+.section.mainGoodsSect .rightPartGroup .goodsImg {
+	max-height : 200px;
+}
+.section.mainGoodsSect .goodsIntroduceGroup {
+	display: block;
+    max-width: 1064px;
+    margin: 0 auto;
+    font-size: 0;
+}
+/* :: ksg_20200520_2339 close [중간 제품 파트] */
+
+
+/* :: ksg_20200521_1723 open [중간 모집 파트] */
+.section.mainRecruitSect {
+	background : url("/drClean/common/img/img_recruitBG.png") no-repeat center / cover;
+}
+.section.mainRecruitSect .recruitIntroduceGroup {
+	display : block;
+	max-width : 1064px;
+	width : calc(100% - 40px);
+	text-align : left;
+	margin : 0 auto;
+	font-size : 0;
+	padding : 44px 20px 63px 20px;
+}
+.section.mainRecruitSect .recruitIntroduceGroup .titleBox {
+    font-size: 14px;
+    /* font-family: "omniGulim",sans-serif; */
+}
+.section.mainRecruitSect .recruitIntroduceGroup .infoBox {
+    font-size: 28px;
+    margin-top: 22px;
+    /* font-family: "omniGulim",sans-serif; */
+    font-weight: 200;
+    line-height: normal;
+}
+.section.mainRecruitSect .recruitIntroduceGroup .textBtn.shortMod {
+	background-color : #000;
+	color : #fff;
+}
+/* :: ksg_20200521_1723 close [중간 모집 파트] */
+
+
+/* :: ksg_20200521_1834 open [중간 고객센터 파트] */
+.section.mainCsSect {
+	text-align : center;
+}
+.section.mainCsSect .csInfoGroup {
+	padding : 80px 0;
+}
+.section.mainCsSect .csInfoGroup .infoBox {
+    font-size: 24px;
+    /* font-family: "omniGulim",sans-serif; */
+    font-weight: 200;
+    line-height: normal;
+}
+
+.section.mainCsSect .csBtnGroup .textBtn.thickMod + .textBtn.thickMod {
+	margin-left : 16px;
+}
+.textBtn.thickMod.greenGradientMod {
+	background-image: linear-gradient(to right, #8cc222, #05a396);
+	color : #fff;
+}
+/* :: ksg_20200521_1834 close [중간 고객센터 파트] */
+
+/* :: ksg_20200522_1516 open [하단 리뷰 파트] */
+.section.mainReviewSect {
+	background-color : #f2f2f5;
+}
+.section.mainReviewSect .reviewInfoGroup {
+	display: block;
+    max-width: 1064px;
+    width: calc(100% - 40px);
+    text-align: left;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 47px 20px 60px 20px;
+}
+.section.mainReviewSect .reviewInfoGroup .titleBox {
+	font-size: 14px;
+}
+.section.mainReviewSect .reviewInfoGroup .infoBox {
+	display : inline-block;
+    font-size: 34px;
+    margin-top: 17px;
+    font-weight: 200;
+	line-height: normal;
+	vertical-align : middle;
+}
+.reviewInfoGroup .arrowSlider {
+	display : inline-block;
+	margin-left : 39px;
+	height : 39px;
+	vertical-align : middle;
+}
+.reviewInfoGroup .arrowSlider .icon {
+	display : inline-block;
+}
+.reviewInfoGroup .arrowSlider .icon + .icon {
+	margin-left : 20px;
+}
+.sliderGroup.reviewSliderSort {
+	display : block;
+	padding-bottom : 60px;
+}
+	
+.sliderGroup.reviewSliderSort .sliderCaseSingle .sliderBackCover {
+	padding : 20px 10px;
+	background-color : #fff;
+	width : calc(100% - 40px);
+}
+.reviewCardBoxInfoGroup {
+	display : block;
+	margin-top : 20px;
+	text-align : center;
+}
+.reviewCardBoxInfoGroup img {
+	display : block;
+	width : 100%;
+	height : auto;
+}
+.reviewCardBoxInfoGroup .titleBox {
+	display : block;
+	margin-top : 20px;
+	font-size : 12px;
+}
+.reviewCardBoxInfoGroup .textBtn.reviewLinkSort {
+	display : block;
+	margin-top : 20px;
+	font-size : 11px;
+}
+.reviewCardBoxInfoGroup .textBtn.reviewLinkSort span {
+	display : inline-block;
+	margin-right : 10px;
+	vertical-align : middle;
+}
+.reviewCardBoxInfoGroup .textBtn.reviewLinkSort .linkArrowRightIcon {
+	vertical-align : middle;
+}
+/* :: ksg_20200522_1516 close [하단 리뷰 파트] */
+
+
+
+
+
+
+
+/* :: ksg_20200520_1711 close : "drClean\index.php" 파트 */
+
+/* :: ksg_20200521_2211 open : "drClean\common\pages\headerG.php" 파트 */
+header.greenHeaderSort {
+	background-image: linear-gradient(to right, #8fc31f, #00a29a);
+}
+header.greenHeaderSort .headerConGroup {
+	padding : 48px 20px;
+	max-width : 1064px;
+	margin : 0 auto;
+}
+header.greenHeaderSort .logoIcon {
+    display: block;
+    width: 155px;
+    height: 49px;
+	background: url(/drClean/common/img/logo_drClean_green.png) no-repeat center / cover;
+}
+header.greenHeaderSort .rightPartGroup.headerSort .textBtn.loginSort {
+	top : -14px;
+}
+/* :: ksg_20200521_2211 close : "drClean\common\pages\headerG.php" 파트 */
+
+
+/* :: ksg_20200521_2210 open : "drClean\product\productList.php" 파트 */
+.section.productListSect {
+	padding-top : 155px;
+}
+/* :: ksg_20200521_2210 close : "drClean\product\productList.php" 파트 */
+
+
+/* :: ksg_20200522_1758 open : "drClean\product\productSpec.php" 파트 */
+
+/* :: ksg_20200522_1758 open : [상단 구매 컨트롤 파트] */
+.section.productBuySect {
+	padding-top : 155px;
+	font-size : 0;
+}
+.leftPartGroup.productImgSort {
+	width : 415px;
+	height : 435px;
+	padding-left : 20px;
+	margin-right : 63px;
+	font-size : 0;
+	vertical-align : top;
+	text-align : center;
+}
+.leftPartGroup.productImgSort img {
+	width : 100%;
+	height : 100%;
+}
+.rightPartGroup.buyControlSort {
+	width : calc(100% - 518px);
+	padding-right : 20px;
+}
+.rightPartGroup.buyControlSort .titleBox.productTitleSort {
+	padding-top : 50px;
+	padding-bottom : 20px;
+	margin-bottom : 20px;
+	font-size : 0;
+	border-bottom : 1px solid #000;
+}
+.titleBox.productTitleSort .goodsName {
+	margin-bottom : 20px;
+	font-size : 20px;
+	font-weight : 600;
+}
+.titleBox.productTitleSort .priceBox {
+	font-size : 20px;
+	font-weight : 600;
+}
+.titleBox.productTitleSort .iconGroup {
+	margin-bottom : 10px;
+	text-align : right;
+}
+.titleBox.productTitleSort  .iconBtn.favoriteIcon {
+	display : inline-block;
+}
+.rightPartGroup.buyControlSort .noticeInfoBox {
+	margin-bottom : 35px;
+}
+.selectOpGroup.goodsOpSort {
+	display : block;
+	font-family : "otmGothic",sans-serif;
+}
+.selectOpGroup.goodsOpSort .titleBox {
+	display : inline-block;
+	vertical-align : middle;
+	font-size : 13px;
+	width : 108px;
+}
+.selectOpGroup.goodsOpSort .sbox {
+	vertical-align : middle;
+	width : calc(100% - 108px);
+}
+.selectOpGroup.goodsOpSort .optionGroup {
+	padding-bottom : 10px;
+}
+.selectOpGroup.goodsOpSort .optionGroup:last-child {
+	padding-bottom : 0;
+}
+.chosenOpGroup.goodsOpSort {
+	display : block;
+	background-color : #f2f2f5;
+	font-size : 0;
+}
+.chosenOpGroup.goodsOpSort .optionBox {
+	display : block;
+	position : relative;
+	padding : 20px;
+}
+.chosenOpGroup.goodsOpSort .optionBox:first-child {
+	margin-top : 15px;
+}
+.chosenOpGroup.goodsOpSort .optionBox:last-child {
+	margin-bottom : 20px;
+}
+.chosenOpGroup.goodsOpSort .iconBtn.closeIcon {
+	display : block;
+	position : absolute;
+	top : 14.5px;
+	right : 14.5px;
+}
+.chosenOpGroup.goodsOpSort .titleBox {
+	display : block;
+	width : calc(100% - 10px);
+	font-size : 13px;
+	margin-bottom : 25px;
+	font-family : "otmGothic",sans-serif;
+	font-weight : 600;
+}
+
+/* :: ksg_20200522_1758 close : [상단 구매 컨트롤 파트] */
+
+
+/* :: ksg_20200526_1219 open : [상품 상세 파트] */
+.section.productMainInfoSect {
+	display : block;
+	margin-top : 50px;
+	margin-bottom : 100px;
+}
+/* .section.productMainInfoSect .sectionCon {
+	width : calc(100% - 40px);
+	padding: 0 20px 0 20px;
+} */
+.section.productMainInfoSect .sectionCon {
+	padding-top : 50px;
+}
+.tabGroup.primaryTabSort {
+	position : absolute;
+	left : 20px;
+	z-index : 50;
+	border-bottom : 2px solid #05a396;
+	background-color : #fff;
+	font-size : 0;
+	width : calc(100% - 40px);
+}
+
+.tabGroup.primaryTabSort a {
+	display : inline-block;
+	width : 25%;
+	height : 50px;
+	line-height : 50px;
+	font-size : 16px;
+	text-align : center;
+}
+.tabGroup.primaryTabSort a.activated {
+	background-color : #05a396;
+	color : #fff;
+	border-radius : 28px 28px 0 0;
+}
+.verticalPartGroup.goodsSpecSort {
+	margin-top : 18px;
+}
+.verticalPartGroup.goodsSpecSort .mainInfoImg {
+	display : block;
+	width : 100%;
+	height : auto;
+}
+/* :: ksg_20200526_1219 close : [상품 상세 파트] */
+
+/* :: ksg_20200526_1634 open : [상품 리뷰 파트] */
+.verticalPartGroup.goodsReviewSort {
+	/* margin-top : 18px; */
+	margin-top : 100px;
+	text-align : center;
+}
+
+
+.listTitleLine .infoBox .reviewTitle {
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+}
+/* :: ksg_20200526_1634 close : [상품 리뷰 파트] */
+
+
+/* :: ksg_20200526_1914 open : [상품 문의 파트] */
+.verticalPartGroup.goodsFaqSort {
+	margin-top : 100px;
+}
+.textBtn.askSort {
+    display: inline-block;
+    border: 2px solid #8dc321;
+    border-radius: 30px;
+    height: 40px;
+    line-height: 44px;
+    width: 146px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8dc321;
+}
+.listHeadLine.faqListSort {
+    display: block;
+    width: 100%;
+    text-align : right;
+}
+.listTitleLine .faqStatus {
+	display : inline-block;
+	width : 95px;
+	font-size : 12px;
+	vertical-align : middle;
+}
+.listTitleLine .infoBox.faqListSort {
+	width : 360px;
+	padding-right : 281px;
+}
+.listHiddenBox.faqListSort .infoBox {
+	padding : 0 92px;
+}
+.infoBox .questionPart,
+.infoBox .answerPart {
+	position : relative;
+	padding : 29px 96px;
+}
+.infoBox .questionPart:before {
+	content : "";
+	position : absolute;
+	bottom : 0;
+	left : -92px;
+	border-bottom : 1px solid #ccc;
+	width : calc(100% + 184px);
+}
+.infoBox .partMark {
+	position : absolute;
+	top : 29px;
+	left : 0;
+	line-height : 20px;
+	color : #05a396;
+	font-size : 20px;
+	font-weight : 600;
+	font-family : "omniGulim",sans-serif;
+}
+/* :: ksg_20200526_1914 close : [상품 문의 파트] */
+
+
+/* :: ksg_20200527_1152 open : [배송정보 파트] */
+.verticalPartGroup.deliveryRuleSort {
+	margin-top : 100px;
+	text-align : center;
+}
+.verticalPartGroup.deliveryRuleSort .emptySpace {
+	display : block;
+	width : 100%;
+	padding : 150px 0;
+	background-color : #ccc;
+	font-weight : 800;
+	font-size : 20px;
+}
+/* :: ksg_20200527_1152 close : [배송정보 파트] */
+
+
+
+/* :: ksg_20200522_1758 close : "drClean\product\productSpec.php" 파트 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :: ksg_20200520_1753 open : 너비 제한 1024 구역  */
+@media(max-width:1024px) {
+	.btnGroup.mainSliderSort {
+		bottom : 181px;
+		width : 98px;
+		height : 30px;
+		line-height : 30px;
+		font-size : 13px;
+		border-radius : 30px;
+	}
+	.slick-dots {
+		bottom : 32px;
+		z-index : 10;
+	}
+}
+/* :: ksg_20200520_1753 close : 너비 제한 1024 구역  */
